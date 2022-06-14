@@ -35,9 +35,9 @@ function checkWhoWins(score){
     if (score >= 30){
         isGameFinished = true;
         if(playerOneScore > playerTwoScore){
-            document.getElementById("player1Score").innerHTML=String(playerOneScore)+"\n Winner Winner Chicken dinner!!!";
+            document.getElementById("winner").innerHTML="Winner Winner Chicken dinner!!!";
         }else{
-            document.getElementById("player2Score").innerHTML=String(playerTwoScore)+"\n Winner Winner Chicken dinner!!!";
+            document.getElementById("winner").innerHTML="Winner Winner Chicken dinner!!!";
         }
     }else{
         isGameFinished = false;
@@ -69,4 +69,5 @@ function resetGame(){
     document.getElementById("player1Score").innerHTML="0";
     document.getElementById("player2Score").innerHTML="0";
     document.getElementById("diceImg").src="./dice1.png";
+    document.getElementById("winner").innerHTML="";
 }
