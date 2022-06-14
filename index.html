@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Rabee AL-Bhaisi">
+        <link rel="stylesheet" href="./styles.css">
+        <title>Dice Game</title>
+    </head>
+    <body>
+        <script src="./DiceGameLogic.js"></script>
+        <main>
+            <section id="informationBar">
+                <div id="player1" class="player">
+                    <h1>player1</h1>
+                    <p id="player1Score">player1 Score</p>
+                </div>
+                <div id="player2" class="player">
+                    <h1>player2</h1>
+                    <p id="player2Score">player2 Score</p>
+                </div>
+            </section>
+            <section id="dice">
+                <img id="diceImg" src="./dice1.png" alt="dice face">
+            </section>
+            <section id="buttons">
+                <div class="buttons" id="rollDicebtn" onclick="rollTheDice()">
+                    <h2>ROLL DICE</h2>
+                </div>
+                <div class="buttons" id="holdDicebtn" onclick="toogleTurns()">
+                    <h2 >HOLD</h2>
+                </div>
+                <div class="buttons" id="newGamebtn" onclick="resetGame()">
+                    <h2>NEW GAME</h2>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
