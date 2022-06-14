@@ -35,9 +35,9 @@ function checkWhoWins(score){
     if (score >= 30){
         isGameFinished = true;
         if(playerOneScore > playerTwoScore){
-            document.getElementById("winner").innerHTML="Winner Winner Chicken dinner!!!";
+            document.getElementById("winner1").innerHTML="Winner Winner Chicken dinner!!!";
         }else{
-            document.getElementById("winner").innerHTML="Winner Winner Chicken dinner!!!";
+            document.getElementById("winner2").innerHTML="Winner Winner Chicken dinner!!!";
         }
     }else{
         isGameFinished = false;
