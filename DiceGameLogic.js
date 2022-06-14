@@ -45,14 +45,16 @@ function checkWhoWins(score){
 }
 
 function toogleTurns(){
-    if(isPlayerOneTurn){
-        isPlayerOneTurn = false;
-        document.getElementById("player2").style.backgroundColor ="#85c8ff";
-        document.getElementById("player1").style.backgroundColor ="transparent";
-    }else{
-        isPlayerOneTurn = true;
-        document.getElementById("player1").style.backgroundColor ="#85c8ff";
-        document.getElementById("player2").style.backgroundColor ="transparent";
+    if(!isGameFinished){
+        if(isPlayerOneTurn){
+            isPlayerOneTurn = false;
+            document.getElementById("player2").style.backgroundColor ="#85c8ff";
+            document.getElementById("player1").style.backgroundColor ="transparent";
+        }else{
+            isPlayerOneTurn = true;
+            document.getElementById("player1").style.backgroundColor ="#85c8ff";
+            document.getElementById("player2").style.backgroundColor ="transparent";
+        }
     }
 }
 
