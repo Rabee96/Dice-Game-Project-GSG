@@ -69,5 +69,8 @@ function resetGame(){
     document.getElementById("player1Score").innerHTML="0";
     document.getElementById("player2Score").innerHTML="0";
     document.getElementById("diceImg").src="./dice1.png";
-    document.getElementById("winner").innerHTML="";
+    document.getElementById("winner1").innerHTML="";
+    document.getElementById("winner2").innerHTML="";
+    document.getElementById("player1").style.backgroundColor ="#85c8ff";
+    document.getElementById("player2").style.backgroundColor ="transparent";
 }
